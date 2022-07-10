@@ -4,14 +4,20 @@ Startup called Sparkify wants to analyze the data they've been collecting on son
 
 In order to enable Sparkify to parse and analyze their data in a distributed manner, a Spark ETL Pipeline was created, which reads the data stored inside S3.
 
-# How to run the python scripts
+# How to run
 
-To start the ETL pipeline, you have to run the following file below:
+*To run this project in local mode*, create a file `dl.cfg` in the root of this project with the following data:
 
-To fill tables via ETL:
-```bash
-python3 etl.py
 ```
+KEY=YOUR_AWS_ACCESS_KEY
+SECRET=YOUR_AWS_SECRET_KEY
+```
+
+Create an S3 Bucket named `sparkify-dend` where output results will be stored.
+
+Finally, run the following command:
+
+`python etl.py`
 
 # Files in the repository
 
