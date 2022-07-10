@@ -23,8 +23,8 @@ Finally, run the following command:
 
 The files found at this project are the following:
 
-- dl.cfg: File with AWS credentials.
-- etl.py: Program that extracts songs and log data from S3, transforms it using Spark, and loads the dimensional tables created in parquet format back to S3 backet.
+- dl.cfg - File with AWS credentials.
+- etl.py - Python script that extracts songs and log data from S3, transforms it using Spark, and loads the dimensional tables created in parquet format back to S3 backet.
 - README.md: Current file, contains detailed information about the project.
 
 # Files in the repository
