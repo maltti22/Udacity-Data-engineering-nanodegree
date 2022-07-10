@@ -19,17 +19,13 @@ Finally, run the following command:
 
 `python etl.py`
 
-## Project structure
+# Project structure
 
 The files found at this project are the following:
 
 - dl.cfg - File with AWS credentials.
 - etl.py - Python script that extracts songs and log data from S3, transforms it using Spark, and loads the dimensional tables created in parquet format back to S3 backet.
 - README.md - Current file, contains detailed information about the project.
-
-# Files in the repository
-
-* **[etl.py](etl.py)**: Python script to extract the needed information from Song and Log data inside the S3 buckets and parsing/inserting them to the local directory
 
 
 # The database schema design and ETL pipeline.
