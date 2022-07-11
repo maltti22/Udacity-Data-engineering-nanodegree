@@ -6,7 +6,7 @@ In order to enable Sparkify to parse and analyze their data in a distributed man
 
 # How to run
 
-*To run this project in local mode*, create a file `dl.cfg` in the root of this project with the following data:
+*To run this project in local mode*, create a file `dl.cfg`  with the following data:
 
 ```
 KEY=YOUR_AWS_ACCESS_KEY
