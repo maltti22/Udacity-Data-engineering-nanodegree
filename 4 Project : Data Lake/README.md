@@ -13,7 +13,7 @@ KEY=YOUR_AWS_ACCESS_KEY
 SECRET=YOUR_AWS_SECRET_KEY
 ```
 
-Create an S3 Bucket named `sparkify-dend` where output results will be stored.
+Create an S3 Bucket named `data-lake-output-data` where output results will be stored.
 
 Finally, run the following command:
 
