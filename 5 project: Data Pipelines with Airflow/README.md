@@ -8,7 +8,7 @@ A fictional music streaming company, Sparkify, has decided that it is time to in
 
 The source data resides in Amazon S3 buckets and needs to be processed in Sparkify's data warehouse in Amazon Redshift. The source datasets may consist of CSV or JSON logs that record user activity in the application and store metadata about the songs that have been played.
 
-For this project, I have created a high grade data pipeline using the Airflow python API. The pipeline is dynamic, built from reusable tasks, can be monitored, allows easy backfills, and conducts automated data quality checks.
+For this project, I have created a data pipeline using the Airflow python API. The pipeline is dynamic, built from reusable tasks, can be monitored, allows easy backfills, and conducts automated data quality checks.
 
 For illustration purposes you can check out the graph that represents this pipeline's flow:
 
