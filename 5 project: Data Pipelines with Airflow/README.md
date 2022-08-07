@@ -15,6 +15,31 @@ Briefly talking about this ELT process:
  - and transform the raw data into the dimensions table too;
  - finally, check if the fact/dimensions table has at least one row.
 
+## Project Structure
+
+```
+Data Pipeline with Apache Airflow
+|
+|____dags
+| |____ create_tables_dag.py   # DAG for creating tables on Redshift
+| |____ create_tables.sql      # SQL CREATE queries
+| |____ udac_example_dag.py    # Main DAG for this ETL data pipeline
+|
+|____plugins
+| |____ __init__.py
+| |
+| |____operators
+| | |____ __init__.py          # Define operators and helpers
+| | |____ stage_redshift.py    # COPY data from S3 to Redshift
+| | |____ load_fact.py         # Execute INSERT query into fact table
+| | |____ load_dimension.py    # Execute INSERT queries into dimension tables
+| | |____ data_quality.py      # Data quality check after pipeline execution
+| |
+| |____helpers
+| | |____ __init__.py
+| | |____ sql_queries.py       # SQL queries for building up dimensional tables
+```
+
 ## Data sources
 
 We will read basically two main data sources on Amazon S3:
