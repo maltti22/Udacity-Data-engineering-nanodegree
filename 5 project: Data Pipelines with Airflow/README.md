@@ -31,7 +31,7 @@ We will read basically two main data sources on Amazon S3:
 1. Create a Redshift cluster on your AWS account
 2. Turn on Airflow by running Airflow/start.sh
 3. Create AWS and Redshift connections on Airflow Web UI
-4. Run create_table _dag DAG to create tables on Redshift
+4. Run create_tables _dag DAG to create tables on Redshift
 5. Run udac_example _dag DAG to trigger ETL data pipeline
 
  
