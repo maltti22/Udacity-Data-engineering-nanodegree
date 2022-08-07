@@ -3,16 +3,7 @@ from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
 
 class LoadDimensionOperator(BaseOperator):
-    """Load data into dimension table from staging tables.
     
-    Parameters:
-    redshift_conn_id: Conn Id of the Airflow connection to redshift database
-    destination_table: name of the dimension table to update
-    sql_statement: 'select' query to retrieve rows for insertion in destination table
-    update_mode: 'insert' or 'overwrite'. 'overwrite' truncates the destination table before inserting rows
-    
-    Returns: None
-    """
 
     ui_color = '#80BD9E'
 
