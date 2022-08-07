@@ -2,8 +2,13 @@
 
 ## Introduction
 
-This project consists of one Directed Acyclic Graph that implements the data pipeline responsible for reading all Sparkify's event
-logs, process and create some fact/dimensions tables described in our data schema down below.
+## Project Summary
+
+A fictional music streaming company, Sparkify, has decided that it is time to introduce more automation and monitoring to their data warehouse ETL pipelines. They have come to the conclusion that the best tool to achieve this is Apache Airflow.
+
+The source data resides in Amazon S3 buckets and needs to be processed in Sparkify's data warehouse in Amazon Redshift. The source datasets may consist of CSV or JSON logs that record user activity in the application and store metadata about the songs that have been played.
+
+For this project, I have created a high grade data pipeline using the Airflow python API. The pipeline is dynamic, built from reusable tasks, can be monitored, allows easy backfills, and conducts automated data quality checks.
 
 For illustration purposes you can check out the graph that represents this pipeline's flow:
 
