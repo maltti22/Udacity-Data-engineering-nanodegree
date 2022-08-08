@@ -1,4 +1,4 @@
-# Sparkify's Event Logs Data Pipeline
+# Project: Data Pipelines with Airflow
 
 ## Project Summary
 
